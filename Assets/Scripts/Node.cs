@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class Node : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Node : MonoBehaviour
     private bool doo = true;
     private bool Coliders = true;
 
+    public static float Health = 100;
+    public Text HealthText;
 
      void OnCollisionEnter2D(Collision2D col)
     {
@@ -34,7 +37,7 @@ public class Node : MonoBehaviour
         if(Input.GetButton("Fire2")){
             StartCoroutine(spawn(worldPosition));
         }
-        
+        HealthText.text = Health.ToString();
     }
 
   
@@ -50,5 +53,6 @@ public class Node : MonoBehaviour
             
     }
 
+  
     
 }

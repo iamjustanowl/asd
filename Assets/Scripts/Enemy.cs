@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
         private Transform target;
 	private int wavepointIndex = 0;
 
+        public GameObject TaretCreator;
+       
 
         void Start()
         {
@@ -37,7 +39,12 @@ public class Enemy : MonoBehaviour
         {
             wavepointIndex++;
             target = Waypoints.points[wavepointIndex];
-  
+            
+            
+            
+        }if(wavepointIndex == 39){
+                Node.Health -= 20;
+                Destroy(this.gameObject);
         }
         
 	}

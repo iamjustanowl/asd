@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -242226153
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 44254084db07a1143856aeea345eb66a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -116,3 +116,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
+  TaretCreator: {fileID: 8424184377046033507, guid: 99b89486e685c764c942e39d8a6b5c91, type: 3}
