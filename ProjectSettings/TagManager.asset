@@ -45,6 +45,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: KuleAlt
+    uniqueID: 4266068977
+    locked: 0
   - name: Top
     uniqueID: 4052741143
+    locked: 0
+  - name: "Kule\xDCst"
+    uniqueID: 1477404383
     locked: 0
