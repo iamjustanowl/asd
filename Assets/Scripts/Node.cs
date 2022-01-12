@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Node : MonoBehaviour
 {
@@ -7,7 +8,8 @@ public class Node : MonoBehaviour
 
     public float TaretCount;
 
-    bool Done = true;
+    private bool doo = true;
+    private bool Coliders = true;
 
     void Start ()
     {
@@ -17,20 +19,32 @@ public class Node : MonoBehaviour
     void FixedUpdate() {
        Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-        TaretCrator.transform.position = new Vector3(worldPosition.x , worldPosition.y , 10);
+        TaretCrator.transform.position = new Vector3(worldPosition.x , worldPosition.y , 0);
         if(Input.GetButton("Fire1")){
-            StartCoroutine(spawn());
+            StartCoroutine(spawn(worldPosition));
         }
         
     }
 
   
-    IEnumerator spawn(){
+    IEnumerator spawn(Vector3 a){
 
-        if(TaretCount >= 1){
+        if(TaretCount >= 1 && doo == true && Coliders == true){
+                doo = false;
                 TaretCount -= 1;
-                Instantiate(Taret , transform.position , Quaternion.identity);
-                yield return new WaitForSeconds(.5f);
+                Instantiate(Taret , a , Quaternion.identity);
+                yield return new WaitForSeconds(1f);
+                doo = true;
             }
+            
+    }
+
+    void OnTriggerEnter(Collider other) {
+       Debug.Log("çarptım");
+    }
+
+    void OnCollisionEnter(Collision other) {
+         Debug.Log(other.gameObject.tag);
+        Debug.Log("çarptım");
     }
 }

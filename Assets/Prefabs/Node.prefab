@@ -96,7 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8511adea112b4a7459eabb0607be2b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0.24705882, g: 0.4117647, b: 0.5294118, a: 1}
+  TaretCrator: {fileID: 0}
+  Taret: {fileID: 0}
+  TaretCount: 0
 --- !u!65 &887017287854832634
 BoxCollider:
   m_ObjectHideFlags: 0
