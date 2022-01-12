@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Enemy : MonoBehaviour
 
         private Transform target;
 	private int wavepointIndex = 0;
+
 
         void Start()
         {
@@ -34,8 +36,8 @@ public class Enemy : MonoBehaviour
         if(wavepointIndex<39)
         {
             wavepointIndex++;
-        target = Waypoints.points[wavepointIndex];    
-
+            target = Waypoints.points[wavepointIndex];
+  
         }
         
 	}

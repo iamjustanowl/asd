@@ -11,6 +11,17 @@ public class Node : MonoBehaviour
     private bool doo = true;
     private bool Coliders = true;
 
+
+     void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("OnCollisionEnter2D");
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log("31");
+    }
+
+
     void Start ()
     {
         
@@ -39,12 +50,5 @@ public class Node : MonoBehaviour
             
     }
 
-    void OnTriggerEnter(Collider other) {
-       Debug.Log("çarptım");
-    }
-
-    void OnCollisionEnter(Collision other) {
-        Debug.Log(other.gameObject.tag);
-        Debug.Log("çarptım");
-    }
+    
 }
