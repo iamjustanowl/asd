@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8835012524392382015}
+  - component: {fileID: -5067254405595443223}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -33,6 +34,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5067254405595443223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3462306563692882052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a308df9195b290649bc9637f80421082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 4.5
 --- !u!1001 &2306786273705366668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62,11 +76,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4575786239207350051, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9
+      value: 0.63
       objectReference: {fileID: 0}
     - target: {fileID: 4575786239207350051, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.61
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 4575786239207350051, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -106,11 +120,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4622651068192513049, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4622651068192513049, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
       propertyPath: m_SortingLayerID
-      value: -242226153
+      value: 1444893979
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
@@ -251,6 +265,14 @@ PrefabInstance:
     - target: {fileID: 4622651068192513049, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
       propertyPath: m_FlipX
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622651068192513049, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622651068192513049, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -242226153
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9e79993aeef71e4493b711f45a00c8b, type: 3}

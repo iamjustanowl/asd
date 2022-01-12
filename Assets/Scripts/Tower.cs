@@ -5,28 +5,17 @@ public class Tower : MonoBehaviour
 {
     [Header("Attributes")]
 	public float range=15f;
-
-
-
-	
-	
-
-
-    void Start()
+void Start()
     {
 
     }
 
- 
-
-
-    void Update()
+ void Update()
     {
        
 	}
 
-	
-	 void OnDrawGizmosSelected ()
+ void OnDrawGizmosSelected ()
 	{
 		Gizmos.color = Color.red;
 		Gizmos.DrawWireSphere(transform.position, range);

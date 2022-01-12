@@ -26,7 +26,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Animal
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Top
     uniqueID: 4052741143
+    locked: 0
+  - name: 2.archer
+    uniqueID: 1444893979
     locked: 0
   - name: "Kule\xDCst"
     uniqueID: 1477404383
