@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -11,11 +12,16 @@ public class WaveSpawner : MonoBehaviour
     private float countdown = 2f;
 
     private int waveIndex = 0;
+    
+    
 
     void Update(){
 
+
+       
         if (countdown<=0f){
-            StartCoroutine(SpawnWave());
+             StartCoroutine(SpawnWave());
+
             countdown = timeBetweenWaves;
         }
 
