@@ -44,7 +44,7 @@ public class Node : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision other) {
-         Debug.Log(other.gameObject.tag);
+        Debug.Log(other.gameObject.tag);
         Debug.Log("çarptım");
     }
 }
