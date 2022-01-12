@@ -7,6 +7,8 @@ public class BuildManager : MonoBehaviour
      
     public static BuildManager instance;
 
+    
+
     void Awake()
     {
         if(instance != null)

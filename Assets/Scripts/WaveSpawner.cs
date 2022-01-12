@@ -6,13 +6,16 @@ public class WaveSpawner : MonoBehaviour
 {
     public Transform enemyPrefab;
 
+    public GameObject WinLevel;
+
     public Transform spawnPoint;
+
 
     public float timeBetweenWaves = 5f;
     private float countdown = 2f;
 
     private int waveIndex = 0;
-    
+
     public Button NexWaveButton;
     bool d = true;
     
@@ -52,7 +55,13 @@ public class WaveSpawner : MonoBehaviour
         } 
         yield return new WaitForSeconds(1f);
         d = true;
-        
+
+        if(waveIndex == 5)
+        {
+            WinLevel.SetActive(true);
+             Time.timeScale = 0;
+        }
+
  }
 
     void SpawnEnemy ()

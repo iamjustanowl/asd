@@ -24,6 +24,7 @@ public class WolfEnemy : MonoBehaviour
         {
                 GetNextWaypoint();
         }
+    }
 
         void GetNextWaypoint()
 	{
@@ -43,4 +44,3 @@ public class WolfEnemy : MonoBehaviour
         }
         
     
-}

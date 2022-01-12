@@ -46,8 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TaretCrator: {fileID: 8424184377046033507}
   Taret: {fileID: 1055881071866420437, guid: 21d75590cba21d447a555ea02c98b484, type: 3}
-  TaretCount: 2
-  sa: 
+  TaretCount: 1
   HealthText: {fileID: 0}
 --- !u!1 &8424184377257590450
 GameObject:

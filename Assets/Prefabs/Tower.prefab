@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8835012524392382015}
-  - component: {fileID: -5067254405595443223}
+  - component: {fileID: -2688858433479391864}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5067254405595443223
+--- !u!114 &-2688858433479391864
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,10 +43,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3462306563692882052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a308df9195b290649bc9637f80421082, type: 3}
+  m_Script: {fileID: 11500000, guid: f5e167ea084139747a8f855257e64ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4.5
+  range: 3.5
+  fireRate: 1
+  enemyTag: Enemy
+  turret: {fileID: 0}
+  target: {fileID: 0}
+  turnSpeed: 10
+  mySpriteRenderer2: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  firePoint: {fileID: 0}
 --- !u!1001 &2306786273705366668
 PrefabInstance:
   m_ObjectHideFlags: 0

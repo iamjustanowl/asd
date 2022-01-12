@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class Enemy : MonoBehaviour
 	private int wavepointIndex = 0;
 
         public GameObject TaretCreator;
+
+     
+
+       
        
 
         void Start()
@@ -47,7 +52,9 @@ public class Enemy : MonoBehaviour
                 Destroy(this.gameObject);
         }
         
-	}
+        
+}
+
 
         }
         
