@@ -2,41 +2,35 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
+    public GameObject TaretCrator;
+    public GameObject Taret;
 
-    public Color hoverColor;
+    public float TaretCount;
 
-    private GameObject turret;
-
-
-    private Renderer rend;
-    private Color startColor;
+    bool Done = true;
 
     void Start ()
     {
-        rend = GetComponent<Renderer>();
-        startColor = rend.material.color;
+        
     }
 
-    void OnMouseDown()
-    {
-        if (turret != null)
-        {
-            Debug.Log("Can't build there");
-            return;
+    void FixedUpdate() {
+       Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+        TaretCrator.transform.position = new Vector3(worldPosition.x , worldPosition.y , 10);
+        if(Input.GetButton("Fire1")){
+            StartCoroutine(spawn());
         }
-        //Build a turret
-        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
-        turret = (GameObject)Instantiate(turretToBuild, transform.position, transform.rotation);
-
+        
     }
 
-    void OnMouseEnter()
-    {
-        rend.material.color = hoverColor;
-    }
+  
+    IEnumerator spawn(){
 
-    void OnMouseExit()
-    {
-        rend.material.color = startColor;
+        if(TaretCount >= 1){
+                TaretCount -= 1;
+                Instantiate(Taret , transform.position , Quaternion.identity);
+                yield return new WaitForSeconds(.5f);
+            }
     }
 }
