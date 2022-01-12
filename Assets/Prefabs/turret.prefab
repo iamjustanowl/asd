@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 1055881071866420436}
   - component: {fileID: 1055881071866420427}
   - component: {fileID: 1055881071866420426}
+  - component: {fileID: 8770685388050519683}
   m_Layer: 0
   m_Name: turret
   m_TagString: Untagged
@@ -135,3 +136,19 @@ MonoBehaviour:
   mySpriteRenderer2: {fileID: 6117185261385905978, guid: 13bb17826d88228468702d436650aa74, type: 3}
   bulletPrefab: {fileID: 3346511809203133726, guid: 13bb17826d88228468702d436650aa74, type: 3}
   firePoint: {fileID: 1055881071838563703}
+--- !u!58 &8770685388050519683
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055881071866420437}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.49
